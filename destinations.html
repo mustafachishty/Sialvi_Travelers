@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Sialvi Travelers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2><span class="logo-s">S</span><span class="logo-text">ialvi</span> <span class="logo-t">T</span><span class="logo-text">ravelers</span></h2>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Amazing Destinations</h1>
+            <p>Discover breathtaking places around the world with our curated travel experiences</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search destinations...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="europe">Europe</button>
+                <button class="filter-btn" data-filter="asia">Asia</button>
+                <button class="filter-btn" data-filter="america">America</button>
+                <button class="filter-btn" data-filter="africa">Africa</button>
+                <button class="filter-btn" data-filter="oceania">Oceania</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Gallery -->
+    <section class="destinations-gallery">
+        <div class="container">
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Europe -->
+                <div class="destination-item" data-category="europe">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Santorini">
+                    <div class="destination-overlay">
+                        <h3>Santorini, Greece</h3>
+                        <p>Stunning sunsets and white-washed buildings overlooking the Aegean Sea</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,299</span>
+                            <span class="duration">7 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="europe">
+                    <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=400" alt="Paris">
+                    <div class="destination-overlay">
+                        <h3>Paris, France</h3>
+                        <p>The city of love, art, and culinary excellence</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,599</span>
+                            <span class="duration">5 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="europe">
+                    <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=400" alt="Rome">
+                    <div class="destination-overlay">
+                        <h3>Rome, Italy</h3>
+                        <p>Ancient history meets modern charm in the Eternal City</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,399</span>
+                            <span class="duration">6 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <!-- Asia -->
+                <div class="destination-item" data-category="asia">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=400" alt="Bali">
+                    <div class="destination-overlay">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical paradise with rich culture and stunning beaches</p>
+                        <div class="destination-info">
+                            <span class="price">From $899</span>
+                            <span class="duration">8 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="asia">
+                    <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400" alt="Tokyo">
+                    <div class="destination-overlay">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Where ancient traditions blend with cutting-edge technology</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,799</span>
+                            <span class="duration">7 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="asia">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=400" alt="Thailand">
+                    <div class="destination-overlay">
+                        <h3>Phuket, Thailand</h3>
+                        <p>Crystal clear waters and vibrant nightlife</p>
+                        <div class="destination-info">
+                            <span class="price">From $799</span>
+                            <span class="duration">6 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <!-- America -->
+                <div class="destination-item" data-category="america">
+                    <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400" alt="New York">
+                    <div class="destination-overlay">
+                        <h3>New York, USA</h3>
+                        <p>The city that never sleeps, full of energy and possibilities</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,499</span>
+                            <span class="duration">5 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="america">
+                    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=400" alt="Machu Picchu">
+                    <div class="destination-overlay">
+                        <h3>Machu Picchu, Peru</h3>
+                        <p>Ancient Incan citadel high in the Andes Mountains</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,899</span>
+                            <span class="duration">9 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="america">
+                    <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=400" alt="Rio">
+                    <div class="destination-overlay">
+                        <h3>Rio de Janeiro, Brazil</h3>
+                        <p>Carnival, beaches, and the iconic Christ the Redeemer</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,299</span>
+                            <span class="duration">7 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <!-- Africa -->
+                <div class="destination-item" data-category="africa">
+                    <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=400" alt="Safari">
+                    <div class="destination-overlay">
+                        <h3>Serengeti, Tanzania</h3>
+                        <p>Witness the great migration and incredible wildlife</p>
+                        <div class="destination-info">
+                            <span class="price">From $2,299</span>
+                            <span class="duration">10 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="africa">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="Cape Town">
+                    <div class="destination-overlay">
+                        <h3>Cape Town, South Africa</h3>
+                        <p>Stunning landscapes and rich cultural heritage</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,699</span>
+                            <span class="duration">8 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <!-- Oceania -->
+                <div class="destination-item" data-category="oceania">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Sydney">
+                    <div class="destination-overlay">
+                        <h3>Sydney, Australia</h3>
+                        <p>Iconic harbor, opera house, and beautiful beaches</p>
+                        <div class="destination-info">
+                            <span class="price">From $1,999</span>
+                            <span class="duration">9 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="oceania">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400" alt="New Zealand">
+                    <div class="destination-overlay">
+                        <h3>Queenstown, New Zealand</h3>
+                        <p>Adventure capital with breathtaking mountain scenery</p>
+                        <div class="destination-info">
+                            <span class="price">From $2,199</span>
+                            <span class="duration">11 Days</span>
+                        </div>
+                        <a href="packages.html" class="view-btn">View Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sialvi Travelers</h3>
+                    <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sialvitravelers.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, State 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sialvi Travelers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/destinations.js"></script>
+</body>
+</html>

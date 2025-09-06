@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - Sialvi Travelers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2><span class="logo-s">S</span><span class="logo-text">ialvi</span> <span class="logo-t">T</span><span class="logo-text">ravelers</span></h2>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html" class="active">Packages</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Travel Packages</h1>
+            <p>Carefully curated travel experiences designed to create unforgettable memories</p>
+        </div>
+    </section>
+
+    <!-- Packages Grid -->
+    <section class="packages-section">
+        <div class="container">
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Santorini Package">
+                        <div class="package-badge">Popular</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Santorini Sunset Romance</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Santorini, Greece</span>
+                            <span><i class="fas fa-calendar"></i> 7 Days / 6 Nights</span>
+                        </div>
+                        <p>Experience the magic of Santorini with stunning sunsets, luxury accommodations, and authentic Greek cuisine.</p>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 4-star hotel accommodation</li>
+                                <li><i class="fas fa-check"></i> Daily breakfast included</li>
+                                <li><i class="fas fa-check"></i> Sunset cruise</li>
+                                <li><i class="fas fa-check"></i> Wine tasting tour</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$1,299</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <div class="package-actions">
+                            <button class="quick-view-btn" onclick="openQuickView('santorini')">Quick View</button>
+                            <a href="booking.html" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=400" alt="Bali Package">
+                        <div class="package-badge">Best Value</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Bali Cultural Adventure</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</span>
+                            <span><i class="fas fa-calendar"></i> 8 Days / 7 Nights</span>
+                        </div>
+                        <p>Immerse yourself in Balinese culture with temple visits, traditional ceremonies, and tropical relaxation.</p>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Boutique resort stay</li>
+                                <li><i class="fas fa-check"></i> All meals included</li>
+                                <li><i class="fas fa-check"></i> Temple tours</li>
+                                <li><i class="fas fa-check"></i> Cooking class</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$899</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <div class="package-actions">
+                            <button class="quick-view-btn" onclick="openQuickView('bali')">Quick View</button>
+                            <a href="booking.html" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400" alt="Tokyo Package">
+                        <div class="package-badge">Premium</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Tokyo Modern & Traditional</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</span>
+                            <span><i class="fas fa-calendar"></i> 7 Days / 6 Nights</span>
+                        </div>
+                        <p>Discover the perfect blend of ancient traditions and modern innovation in Japan's vibrant capital.</p>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 5-star hotel in Shibuya</li>
+                                <li><i class="fas fa-check"></i> JR Pass included</li>
+                                <li><i class="fas fa-check"></i> Sushi making class</li>
+                                <li><i class="fas fa-check"></i> Mount Fuji day trip</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$1,799</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <div class="package-actions">
+                            <button class="quick-view-btn" onclick="openQuickView('tokyo')">Quick View</button>
+                            <a href="booking.html" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=400" alt="Paris Package">
+                    </div>
+                    <div class="package-content">
+                        <h3>Paris City of Love</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Paris, France</span>
+                            <span><i class="fas fa-calendar"></i> 5 Days / 4 Nights</span>
+                        </div>
+                        <p>Fall in love with Paris through its art, cuisine, and romantic atmosphere in this enchanting getaway.</p>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Boutique hotel near Louvre</li>
+                                <li><i class="fas fa-check"></i> Seine river cruise</li>
+                                <li><i class="fas fa-check"></i> Eiffel Tower dinner</li>
+                                <li><i class="fas fa-check"></i> Versailles day trip</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$1,599</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <div class="package-actions">
+                            <button class="quick-view-btn" onclick="openQuickView('paris')">Quick View</button>
+                            <a href="booking.html" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 5 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=400" alt="Safari Package">
+                        <div class="package-badge">Adventure</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>African Safari Experience</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Serengeti, Tanzania</span>
+                            <span><i class="fas fa-calendar"></i> 10 Days / 9 Nights</span>
+                        </div>
+                        <p>Witness the great migration and incredible wildlife in one of Africa's most spectacular national parks.</p>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Luxury safari lodge</li>
+                                <li><i class="fas fa-check"></i> Game drives included</li>
+                                <li><i class="fas fa-check"></i> Hot air balloon safari</li>
+                                <li><i class="fas fa-check"></i> Maasai village visit</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$2,299</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <div class="package-actions">
+                            <button class="quick-view-btn" onclick="openQuickView('safari')">Quick View</button>
+                            <a href="booking.html" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 6 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Australia Package">
+                    </div>
+                    <div class="package-content">
+                        <h3>Australian Highlights</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Sydney & Melbourne</span>
+                            <span><i class="fas fa-calendar"></i> 9 Days / 8 Nights</span>
+                        </div>
+                        <p>Explore Australia's iconic cities, stunning coastlines, and unique wildlife in this comprehensive tour.</p>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 4-star city hotels</li>
+                                <li><i class="fas fa-check"></i> Opera House tour</li>
+                                <li><i class="fas fa-check"></i> Great Ocean Road</li>
+                                <li><i class="fas fa-check"></i> Wildlife sanctuary visit</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$1,999</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <div class="package-actions">
+                            <button class="quick-view-btn" onclick="openQuickView('australia')">Quick View</button>
+                            <a href="booking.html" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div id="quickViewModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sialvi Travelers</h3>
+                    <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sialvitravelers.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, State 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sialvi Travelers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/packages.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - Sialvi Travelers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2><span class="logo-s">S</span><span class="logo-text">ialvi</span> <span class="logo-t">T</span><span class="logo-text">ravelers</span></h2>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Dream Trip</h1>
+            <p>Fill out the form below and let us create the perfect travel experience for you</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-form-wrapper">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-step active" id="step1">
+                            <h3>Step 1: Trip Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="destination">Destination *</label>
+                                    <select id="destination" name="destination" required>
+                                        <option value="">Select Destination</option>
+                                        <option value="santorini">Santorini, Greece</option>
+                                        <option value="bali">Bali, Indonesia</option>
+                                        <option value="tokyo">Tokyo, Japan</option>
+                                        <option value="paris">Paris, France</option>
+                                        <option value="safari">African Safari</option>
+                                        <option value="australia">Australia</option>
+                                        <option value="other">Other (Please specify)</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="package">Package Type *</label>
+                                    <select id="package" name="package" required>
+                                        <option value="">Select Package</option>
+                                        <option value="budget">Budget Package</option>
+                                        <option value="standard">Standard Package</option>
+                                        <option value="premium">Premium Package</option>
+                                        <option value="luxury">Luxury Package</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="departure">Departure Date *</label>
+                                    <input type="date" id="departure" name="departure" required>
+                                    <span class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="return">Return Date *</label>
+                                    <input type="date" id="return" name="return" required>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="adults">Adults *</label>
+                                    <select id="adults" name="adults" required>
+                                        <option value="">Select</option>
+                                        <option value="1">1 Adult</option>
+                                        <option value="2">2 Adults</option>
+                                        <option value="3">3 Adults</option>
+                                        <option value="4">4 Adults</option>
+                                        <option value="5+">5+ Adults</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="children">Children</label>
+                                    <select id="children" name="children">
+                                        <option value="0">No Children</option>
+                                        <option value="1">1 Child</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                        <option value="4+">4+ Children</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="button" class="next-btn" onclick="nextStep()">Next Step</button>
+                        </div>
+
+                        <div class="form-step" id="step2">
+                            <h3>Step 2: Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <span class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address *</label>
+                                <input type="text" id="address" name="address" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                    <span class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country *</label>
+                                    <select id="country" name="country" required>
+                                        <option value="">Select Country</option>
+                                        <option value="us">United States</option>
+                                        <option value="ca">Canada</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="au">Australia</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="prev-btn" onclick="prevStep()">Previous</button>
+                                <button type="button" class="next-btn" onclick="nextStep()">Next Step</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step3">
+                            <h3>Step 3: Additional Preferences</h3>
+                            <div class="form-group">
+                                <label for="accommodation">Accommodation Preference</label>
+                                <select id="accommodation" name="accommodation">
+                                    <option value="">No Preference</option>
+                                    <option value="hotel">Hotel</option>
+                                    <option value="resort">Resort</option>
+                                    <option value="villa">Villa</option>
+                                    <option value="apartment">Apartment</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="activities">Preferred Activities</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="activities" value="sightseeing"> Sightseeing</label>
+                                    <label><input type="checkbox" name="activities" value="adventure"> Adventure Sports</label>
+                                    <label><input type="checkbox" name="activities" value="cultural"> Cultural Experiences</label>
+                                    <label><input type="checkbox" name="activities" value="relaxation"> Relaxation</label>
+                                    <label><input type="checkbox" name="activities" value="nightlife"> Nightlife</label>
+                                    <label><input type="checkbox" name="activities" value="shopping"> Shopping</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select Budget</option>
+                                    <option value="under-1000">Under $1,000</option>
+                                    <option value="1000-2000">$1,000 - $2,000</option>
+                                    <option value="2000-5000">$2,000 - $5,000</option>
+                                    <option value="over-5000">Over $5,000</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="specialRequests">Special Requests</label>
+                                <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any special requirements, dietary restrictions, or additional information..."></textarea>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="prev-btn" onclick="prevStep()">Previous</button>
+                                <button type="submit" class="submit-btn">Submit Booking Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="booking-summary">
+                    <h3>Booking Summary</h3>
+                    <div class="summary-content">
+                        <div class="summary-item">
+                            <span>Destination:</span>
+                            <span id="summaryDestination">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Package:</span>
+                            <span id="summaryPackage">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Departure:</span>
+                            <span id="summaryDeparture">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Return:</span>
+                            <span id="summaryReturn">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Travelers:</span>
+                            <span id="summaryTravelers">-</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Estimated Total:</span>
+                            <span id="summaryTotal">Contact for Quote</span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Need Help?</h4>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> booking@sialvitravelers.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Booking Request Submitted!</h3>
+            <p>Thank you for choosing Sialvi Travelers. We've received your booking request and will contact you within 24 hours to confirm details and provide a detailed quote.</p>
+            <p>A confirmation email has been sent to your email address.</p>
+            <button class="close-modal-btn" onclick="closeSuccessModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sialvi Travelers</h3>
+                    <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sialvitravelers.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, State 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sialvi Travelers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

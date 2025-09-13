@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        function toggleWhatsApp() {
+            window.open('https://wa.me/message/BTATILX3MBTOI1?text=Hi%2C%20Thanks%20for%20reaching%20out%20Sialvi%20Travelers%2C%20How%20can%20we%20assist!!', '_blank');
+        }
+        
+        function closeWhatsApp() {
+            const popup = document.getElementById('whatsappPopup');
+            const widget = document.getElementById('whatsappWidget');
+            popup.classList.remove('show');
+            widget.classList.remove('active');
+        }
+        
+        // Auto show widget after 3 seconds
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('whatsappWidget').classList.add('animate-in');
+            }, 3000);
+        });
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -194,6 +213,14 @@
         </div>
     </section>
 
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget" id="whatsappWidget">
+        <div class="whatsapp-button" onclick="toggleWhatsApp()">
+            <i class="fab fa-whatsapp"></i>
+            <span class="pulse-ring"></span>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -201,6 +228,37 @@
                 <div class="footer-section">
                     <h3>Sialvi Travelers</h3>
                     <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sialvitravelers.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sialvi Travelers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>el experiences around the world.</p>
                     <div class="social-links">
                         <a href="https://web.facebook.com/GMKILLER27"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>

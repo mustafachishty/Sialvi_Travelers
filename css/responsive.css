@@ -202,6 +202,17 @@
         padding: 6px 12px;
         font-size: 0.9rem;
     }
+
+    /* WhatsApp Widget Tablet */
+    .whatsapp-widget {
+        bottom: 75px;
+        right: 15px;
+    }
+    
+    .whatsapp-popup {
+        width: 300px;
+        bottom: 75px;
+    }
 }
 
 /* Mobile Styles */
@@ -363,6 +374,32 @@
         padding: 6px 15px;
         font-size: 0.9rem;
     }
+
+    /* WhatsApp Widget Mobile */
+    .whatsapp-widget {
+        bottom: 70px;
+        right: 10px;
+    }
+    
+    .whatsapp-popup {
+        width: calc(100vw - 30px);
+        right: -5px;
+        bottom: 70px;
+    }
+    
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .whatsapp-button i {
+        font-size: 22px;
+    }
+    
+    .pulse-ring {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /* Navbar Animation Keyframes */
@@ -432,6 +469,24 @@
     .post-category {
         font-size: 0.7rem;
         padding: 3px 10px;
+    }
+
+    /* WhatsApp Widget Extra Small */
+    .whatsapp-popup {
+        width: calc(100vw - 20px);
+        right: 0;
+    }
+    
+    .popup-header {
+        padding: 15px;
+    }
+    
+    .popup-body {
+        padding: 15px;
+    }
+    
+    .popup-footer {
+        padding: 10px 15px;
     }
 }
 

@@ -90,10 +90,22 @@
     .destinations-grid,
     .testimonials-grid,
     .mv-grid,
-    .team-grid,
     .packages-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .team-member {
+        flex: 0 0 calc(50% - 0.75rem);
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     /* Story Content */
@@ -319,10 +331,23 @@
         padding: 0 1rem 1rem;
     }
 
+    /* Team Grid Mobile */
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member {
+        flex: 0 0 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
     /* Team Member Images */
     .team-member img {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
 
     /* Price Display */
